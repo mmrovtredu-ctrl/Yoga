@@ -612,5 +612,10 @@
     window.open(`https://wa.me/${WA}?text=${encodeURIComponent(msg)}`,'_blank');
   }
 </script>
+
+<script type="module">
+  import { inject } from 'https://cdn.jsdelivr.net/npm/@vercel/analytics@1/+esm';
+  inject();
+</script>
 </body>
 </html>
